@@ -1,0 +1,207 @@
+:::writing
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>英旺烟花 | 儋州烟花爆竹官网</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:white;
+scroll-behavior:smooth;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+padding:15px;
+display:flex;
+justify-content:center;
+gap:40px;
+z-index:100;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#ff0066;
+}
+
+section{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:80px 20px;
+}
+
+.hero{
+position:relative;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+.hero h1{
+font-size:80px;
+letter-spacing:8px;
+}
+
+.gallery{
+background:#050505;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+width:90%;
+max-width:1200px;
+}
+
+.grid img{
+width:100%;
+border-radius:10px;
+transition:0.4s;
+}
+
+.grid img:hover{
+transform:scale(1.05);
+}
+
+.order{
+background:#0a0a0a;
+}
+
+input,textarea{
+width:300px;
+padding:10px;
+margin:10px;
+border:none;
+border-radius:6px;
+}
+
+button{
+padding:14px 30px;
+background:#ff0066;
+border:none;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff3388;
+}
+
+.qr{
+margin-top:20px;
+}
+
+.map{
+width:90%;
+max-width:800px;
+height:400px;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#home">首页</a>
+<a href="#gallery">产品</a>
+<a href="#map">位置</a>
+<a href="#order">下单</a>
+</nav>
+
+<section id="home" class="hero">
+
+<video autoplay muted loop>
+<source src="https://cdn.coverr.co/videos/coverr-fireworks-in-the-sky-1570/1080p.mp4">
+</video>
+
+<h1>英旺烟花</h1>
+<p>海南省儋州市 · 烟花爆竹品牌</p>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+<h2>烟花产品图库</h2>
+
+<div class="grid">
+
+<img src="https://images.unsplash.com/photo-1504198458649-3128b932f49b">
+<img src="https://images.unsplash.com/photo-1513151233558-d860c5398176">
+<img src="https://images.unsplash.com/photo-1502139214982-d0ad755818d8">
+<img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78">
+<img src="https://images.unsplash.com/photo-1478147427282-58a87a120781">
+<img src="https://images.unsplash.com/photo-1519681393784-d120267933ba">
+
+</div>
+
+</section>
+
+<section id="map">
+
+<h2>店铺位置</h2>
+
+<iframe
+class="map"
+src="https://maps.google.com/maps?q=danzhou%20hainan&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<section id="order" class="order">
+
+<h2>在线下单</h2>
+
+<input placeholder="您的姓名">
+
+<input placeholder="联系电话">
+
+<textarea placeholder="需要的烟花类型"></textarea>
+
+<br>
+
+<button onclick="alert('订单已提交，我们会联系您')">
+提交订单
+</button>
+
+<div class="qr">
+
+<h3>微信咨询</h3>
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=wechat"
+width="200">
+
+</div>
+
+</section>
+
+<footer style="padding:30px;text-align:center;opacity:0.6;">
+© 英旺烟花官网
+</footer>
